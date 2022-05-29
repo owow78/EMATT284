@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Create a New Walk</title>
+	<link rel="stylesheet" type="text/css" href="css/q2a-1.css">
+	<link rel="stylesheet" type="text/css" href="css/q2a-2.css">
+</head>
+
+<body>
+	<div id="page">
+		<div id="header">
+			<span>
+				<a href="#"><img id="logo-image" src="images/logo.png" alt="LOGO"></a>
+			</span>
+			<h1 id="title">OU Walking Club</h1>
+			<h2 id="subtitle">Admin Panel</h2>
+		</div>
+		<hr>
+		<div id="navbar">
+			<div class="menu-item">
+				<div class="menu-title"><a style="color: white;" href="#"> Home </a></div>
+			</div>
+			<div class="menu-item">
+				<div class="menu-title">Events</div>
+				<div class="sub-menu">
+					<a class="link" href="#">Create a New Walk Event</a>
+					<hr>
+					<a class="link" href="#">Edit Walk Events</a>
+					<hr>
+					<a class="link" href="#">Event Proposals</a>
+					<hr>
+					<a class="link" href="#">Create Other Events</a>
+				</div>
+			</div>
+			<div class="menu-item">
+				<div class="menu-title">Members</div>
+				<div class="sub-menu">
+					<a class="link" href="#">Active Members</a>
+					<hr>
+					<a class="link" href="#">Membership Requests</a>
+					<hr>
+					<a class="link" href="#">Edit Member Details</a>
+					<hr>
+					<a class="link" href="#">Change Member Status</a>
+				</div>
+			</div>
+			<div class="menu-item">
+				<div class="menu-title">News Items</div>
+				<div class="sub-menu">
+					<a class="link" href="#">All News Items</a>
+					<hr>
+					<a class="link" href="#">Active News Items</a>
+					<hr>
+					<a class="link" href="#">Review News Items</a>
+				</div>
+			</div>
+			<div class="menu-item">
+				<div class="menu-title"><a style="color: white;" href="#"> Announcements </a></div>
+			</div>
+			<div class="menu-item">
+				<div class="menu-title"><a style="color: white;" href="#"> Logout </a></div>
+			</div>
+		</div>
+		<div id="main-body">
+			<a class="nav" href="#">Home</a><span> > </span><a class="nav" href="#">Add Walk</a>
+			<hr>
+			<h2>Add a New Walk Event</h2>
+			<div class="form-div">
+				<form id="add-walk" action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php" method="post">
+					<div class="form-group">
+						<label for="event_name">Name:</label>
+						<input type="text" id="event_name" name="event_name" />
+					</div>
+					<div class="form-group">
+						<label for="event_date">Date:</label>
+						<input type="date" id="event_date" name="event_date" />
+					</div>
+					<div class="form-group">
+						<label for="event_time">Start Time:</label>
+						<input type="time" id="event_time" name="event_time" value="00:00" />
+					</div>
+					<div class="form-group">
+						<label for="event_end_time">End Time:</label>
+						<input type="time" id="event_end_time" name="event_end_time" value="00:00" />
+					</div>
+					<div class="form-group">
+						<label for="meeting_point">Meeting Point:</label>
+						<input type="text" id="meeting_point" name="meeting_point" />
+					</div>
+					<div class="form-group">
+						<label for="distance">Distance (In Kilometers):</label>
+						<input type="number" id="distance" name="distance" />
+					</div>
+					<div class="form-group">
+						<label for="leader">Leader:</label>
+						<input type="text" id="leader" name="leader" />
+					</div>
+					<div class="form-group">
+						<label for="notes">Comments:</label>
+						<textarea id="notes" name="notes"></textarea>
+					</div>
+					<input type="hidden" id="status" name="status" value="proposed" />
+					<div class="form-group-button">
+						<input type="submit" name="submit" value="Submit" />
+					</div>
+				</form>
+			</div>
+
+		</div>
+
+
+
+	</div>
+	<div id="footer"></div>
+
+
+</body>
+
+</html>
