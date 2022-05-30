@@ -1,0 +1,311 @@
+		body {
+			margin: 0px;
+		}
+
+		/*Styling menu button and menu items for desktop screen*/
+		a,
+		.menu-title,
+		.mobile-button {
+			font-family: sans-serif;
+			font-size: 1.2rem;
+		}
+
+		/*setting the page layout and background colour for desktop screen*/
+		#page {
+			width: 1024px;
+			/* Setting page width to 1024px*/
+			height: auto;
+			margin: auto;
+			background-color: #fafafa;
+			/*Setting background colour of the page to off-white*/
+		}
+
+		/*Styling horizontal line breaks*/
+		hr {
+			border: 0.5px solid green;
+		}
+
+		/*Setting page Header layout*/
+		#header {
+			width: 1024px;
+			height: 100px;
+			margin: auto;
+		}
+
+		/* Setting the dimensions for the website logo*/
+		#logo-image {
+			width: 99px;
+			height: 99px;
+			float: left;
+			border: 1px solid #ddffff;
+			margin-right: 50px;
+		}
+
+		/*Styling the elements in page header*/
+
+		#title,
+		#logo-image {
+			display: inline;
+		}
+
+		#title {
+			color: green;
+			/*Changing the colour of page title to green*/
+		}
+
+		#subtitle {
+			text-align: left;
+			color: #4097FA;
+			/* Changing the colour of page subtitle to blue*/
+		}
+
+		/*Styling menu items for desktop screen*/
+		.menu-item {
+			width: auto;
+			height: 18px;
+			text-align: center;
+			font-size: 20px;
+			cursor: pointer;
+			/* float: left; */
+			color: white;
+			position: relative;
+			display: inline-block;
+		}
+
+
+		.menu-title {
+			padding: 15px 19.5px 15px 19.5px;
+			height: 19px;
+		}
+
+		/*Changing menu backgroung colour on hover*/
+		.menu-title:hover {
+			background-color: #4097FA;
+			/*Blue*/
+		}
+
+		/*Styling submenus for desktop screen*/
+		div.menu-item div.sub-menu {
+			display: none;
+			z-index: 1;
+			position: relative;
+			min-width: 250px;
+			max-width: 250px;
+			background-color: green;
+			padding: 0px 19.5px 0px 19.5px;
+			border: 1px solid #b0b0b0;
+			border-radius: 3px;
+		}
+
+		/*Styling menu items for mobile screen*/
+		.link {
+			color: white;
+			display: block;
+			text-decoration: none;
+			padding: 5px;
+		}
+
+		/*Expanding menus on hover*/
+		div.menu-item:hover div.sub-menu {
+			display: block;
+			position: absolute;
+		}
+
+		/*Changing submenu colour on hover*/
+		.sub-menu a:hover {
+			background-color: #4097FA;
+		}
+
+		/*Setting the navbar (menu-bar) layout*/
+		#navbar {
+			width: 724px;
+			height: 50px;
+			margin: auto;
+			margin-bottom: -1px;
+			background-color: green;
+			position: relative;
+		}
+
+		/*Setting the page body layout*/
+		#main-body {
+			width: 780px;
+			height: auto;
+			margin: auto;
+			padding: 20px;
+			overflow-y: auto;
+		}
+
+		/*Styling hover tags*/
+		a {
+			text-decoration: none;
+			color: black;
+		}
+
+		/*Hiding the mobile menu button and menu items when website is accessed on desktop*/
+		.nav-mobile {
+			display: none;
+		}
+
+		.mobile-button {
+			display: none;
+		}
+
+		/*Setting footer layout*/
+
+		#footer {
+			width: 1024px;
+			height: 110px;
+			margin: auto;
+		}
+
+
+		/*Stylin the page for a mobile screen*/
+
+		@media only screen and (width: 375px) {
+
+			/*setting the page layout and background colour for mobile screen*/
+			#page {
+				width: 350px;
+				/* Setting page width to 1024px*/
+				height: auto;
+				margin: auto;
+				background-color: #fafafa;
+				/*Setting the backgorund colour to off-white*/
+			}
+
+
+			/*Styling menu button and menu items for mobile screen*/
+			a,
+			.menu-title,
+			.mobile-button {
+				font-family: sans-serif;
+				font-size: 1rem;
+			}
+
+			hr {
+				border: 0.5px solid green;
+			}
+
+			/*Setting page Header layout*/
+			#header {
+				width: 350px;
+				height: 70px;
+				margin: auto;
+			}
+
+			/* Setting the dimensions for the website logo for mobile screen*/
+			#logo-image {
+				width: 70px;
+				height: 70px;
+				float: left;
+				border: 1px solid #ddffff;
+				margin-right: 30px;
+			}
+
+
+			#title {
+				font-size: 25px;
+				/*Changing the colour of page title to green*/
+				color: green;
+			}
+
+			#subtitle {
+				text-align: left;
+				font-size: 20px;
+				color: #4097FA;
+				/* Changing the colour of page subtitle to blue*/
+			}
+
+
+			/*Styling the menu items on mobile screen*/
+			.link {
+				color: white;
+				background-color: green;
+				display: block;
+				text-decoration: none;
+				text-align: center;
+				padding: 5px;
+				margin: 5px;
+			}
+
+			/*Hiding the navbar on mobile screen*/
+			#navbar {
+				display: none;
+
+			}
+
+			/*Styling page body for mobile screen*/
+			#main-body {
+				box-sizing: border-box;
+				width: 350px;
+				height: auto;
+				margin: auto;
+				margin: 0px;
+				padding: 5px;
+				overflow: hidden;
+			}
+
+			/*Styling anchor tags*/
+			a {
+				text-decoration: none;
+				color: black;
+			}
+
+			/*Styling the menu button for mobile screen*/
+			.mobile-button {
+				width: 4rem;
+				height: 2rem;
+				margin-left: 10px;
+				border: none;
+				outline: none;
+				background-color: green;
+				color: white;
+				cursor: pointer;
+				display: inline;
+				position: relative;
+			}
+
+			/*styling menu button when hovered or focused */
+			.mobile-button:hover,
+			.mobile-button:focus {
+				background-color: #4097FA;
+				/*Blue*/
+
+
+			}
+
+			/*Styling the mobile vertical navbar*/
+			.nav-mobile {
+				margin-top: 2px;
+				width: 250px;
+				height: auto;
+				background-color: #f0f0f0;
+				border-radius: 5px;
+				border: 1px solid green;
+			}
+
+			h4 {
+				text-align: center;
+				color: green;
+			}
+
+			/*Expanding menu items when menu button is focused*/
+			.menu:focus+div.nav-mobile {
+				display: block;
+				position: absolute;
+			}
+
+			/*Styling menu items on hover*/
+			.link:hover {
+				background-color: #4097FA;
+				/*Blue*/
+			}
+
+			/*Setting footer layout for mobile screen*/
+			#footer {
+				box-sizing: border-box;
+				width: 375px;
+				height: 110px;
+				margin: auto;
+			}
+		}
